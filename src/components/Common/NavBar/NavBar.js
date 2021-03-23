@@ -1,19 +1,28 @@
-import React from 'react';
-import './NavBar.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.scss";
 
 const NavBar = () => {
-    return (
-        <div className='NavBar'>
-            <div className='NavBar__Wrap'>
-            <div className='NavBar__logo'>BizBot</div>
-            <div className='NavBar__menu'>
-                <div>서비스 소개</div>
-                <div>회사 소개</div>
-                <div>연혁</div>
-            </div>
-            </div>
+  return (
+    <div className='NavBar'>
+      <div className='NavBar__Wrap'>
+        <div className='NavBar__logo'>
+          <Link to='/'>BizBot</Link>
         </div>
-    )
-}
+        <div className='NavBar__menu'>
+          <div>
+            <Link to='/'>서비스 소개</Link>
+          </div>
+          <div>
+            <Link to='/ci'>회사 소개</Link>
+          </div>
+          <div>
+            <Link to='/history'>연혁</Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default NavBar;
