@@ -1,0 +1,28 @@
+@import "../../../styles/styleScheme.scss";
+
+.NavBar {
+  @include sizeSet(100vw, 5vh);
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: $gray1 0px 0px 15px;
+  padding-top: 20px;
+  &__Wrap {
+    position: sticky;
+  }
+  &__logo {
+    text-align: left;
+    width: 10vw;
+    display: inline;
+    margin-left: 20px;
+  }
+  &__menu {
+    float: right;
+    display: inline;
+    & * {
+      display: inline;
+      margin-right: 30px;
+    }
+  }
+}
