@@ -8,6 +8,7 @@
   left: 0;
   box-shadow: $gray1 0px 0px 15px;
   padding-top: 20px;
+  text-decoration: none;
   &__Wrap {
     position: sticky;
   }
@@ -16,6 +17,11 @@
     width: 10vw;
     display: inline;
     margin-left: 20px;
+    cursor: pointer;
+    & * {
+      text-decoration: none;
+      color: $gray2;
+    }
   }
   &__menu {
     float: right;
@@ -23,6 +29,9 @@
     & * {
       display: inline;
       margin-right: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $gray2;
     }
   }
 }
