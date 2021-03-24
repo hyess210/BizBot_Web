@@ -1,0 +1,37 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.MainIntroduce {
+  height: 100vh;
+  margin-top: 5vh;
+  &__Image {
+    margin-top: 8vh;
+    & img {
+      position: absolute;
+      left: 0;
+      @include sizeSet(100%, 10%0%);
+    }
+    &-content {
+      position: absolute;
+      color: $white;
+      margin-top: 5rem;
+      margin-left: 5rem;
+      &-btn {
+        background-color: $white;
+        border: 0;
+        padding: 10px;
+        font-size: $font-size1;
+        font-family: $NOTOSANS_BOLD;
+        margin-top: 15px;
+        border-radius: 5px;
+      }
+      & h1 {
+        margin: 0;
+        font-size: $font-size2;
+      }
+      & div {
+        margin-top: 10px;
+      }
+    }
+  }
+}

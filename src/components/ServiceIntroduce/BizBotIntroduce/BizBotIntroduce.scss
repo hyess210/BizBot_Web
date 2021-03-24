@@ -1,0 +1,18 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.BizBotIntroduce {
+  &__Left {
+    @include sizeSet(50vw, 100%);
+    &-box {
+      display: inline;
+      margin-left: 5vw;
+      &-img {
+      }
+    }
+  }
+  &__Right {
+    @include sizeSet(50vw, 100%);
+    background-color: gray;
+  }
+}
