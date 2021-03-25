@@ -1,0 +1,16 @@
+@import "../../styles/styleScheme.scss";
+@import "../../styles/fontScheme.scss";
+
+.MockUpBG {
+  margin-top: 10%;
+  &__content {
+    height: 50vh;
+    background-size: cover;
+    &-title {
+      font-size: $font-size2;
+    }
+  }
+  & img {
+    width: 100%;
+  }
+}

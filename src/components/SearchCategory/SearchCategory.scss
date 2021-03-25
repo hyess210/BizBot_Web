@@ -1,0 +1,27 @@
+@import "../../styles/styleScheme.scss";
+@import "../../styles/fontScheme.scss";
+
+.SearchCategory {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 5%;
+  &__content {
+    &-title {
+      font-size: $font-size2;
+    }
+  }
+  &__category {
+    margin-top: 5%;
+    &-category {
+      width: 100%;
+    }
+    &-more {
+      width: 13%;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        width: 14%;
+      }
+    }
+  }
+}

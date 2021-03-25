@@ -4,7 +4,7 @@
 .BizBotIntroduce {
   @include sizeSet(100%, 60vh);
   &__Left {
-    @include sizeSet(40vw, 100%);
+    @include sizeSet(50vw, 80%);
     float: left;
     display: inline;
     margin-top: 10%;
@@ -14,7 +14,7 @@
       float: left;
       &-img {
         & img {
-          width: 70%;
+          width: 60%;
         }
       }
       &-title {
@@ -23,7 +23,7 @@
     }
   }
   &__Right {
-    @include sizeSet(50vw, 100%);
+    @include sizeSet(30vw, 20%);
     float: right;
     margin-top: 8%;
     &-img {
@@ -40,5 +40,45 @@
   &__Botttom {
     @include sizeSet(100%, 60vh);
     background-color: green;
+  }
+}
+
+.BizBotIntroduceBottom {
+  @include sizeSet(90%, 60vh);
+  margin-top: 15%;
+
+  &__Top {
+    width: 100%;
+    &-box {
+      @include sizeSet(400px, 200px);
+      background-color: $gray1;
+      display: inline-block;
+    }
+    &-content {
+      width: 30vw;
+      & h1 {
+        font-size: $font-size1;
+      }
+      & div {
+      }
+    }
+  }
+  &__Bottom {
+    &-box {
+      @include sizeSet(400px, 200px);
+      background-color: $gray1;
+      display: inline-block;
+      text-align: right;
+    }
+    &-content {
+      width: 30vw;
+      display: inline;
+      text-align: right;
+      & h1 {
+        font-size: $font-size1;
+      }
+      & div {
+      }
+    }
   }
 }
