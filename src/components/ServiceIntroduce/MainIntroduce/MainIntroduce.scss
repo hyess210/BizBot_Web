@@ -2,14 +2,14 @@
 @import "../../../styles/fontScheme.scss";
 
 .MainIntroduce {
-  height: 100vh;
+  height: 80vh;
   margin-top: 5vh;
   &__Image {
     margin-top: 8vh;
     & img {
       position: absolute;
       left: 0;
-      @include sizeSet(100%, 10%0%);
+      @include sizeSet(100%, 60vh);
     }
     &-content {
       position: absolute;
