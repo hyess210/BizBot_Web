@@ -2,17 +2,43 @@
 @import "../../../styles/fontScheme.scss";
 
 .BizBotIntroduce {
+  @include sizeSet(100%, 60vh);
   &__Left {
-    @include sizeSet(50vw, 100%);
+    @include sizeSet(40vw, 100%);
+    float: left;
+    display: inline;
+    margin-top: 10%;
+    margin-left: 5%;
     &-box {
-      display: inline;
-      margin-left: 5vw;
+      margin-left: 5px;
+      float: left;
       &-img {
+        & img {
+          width: 70%;
+        }
+      }
+      &-title {
+        text-align: center;
       }
     }
   }
   &__Right {
     @include sizeSet(50vw, 100%);
-    background-color: gray;
+    float: right;
+    margin-top: 8%;
+    &-img {
+      @include sizeSet(200px, 200px);
+      background-color: gray;
+    }
+    &-title {
+      font-size: $font-size2;
+    }
+    &-subTitle {
+      font-size: $font-size1;
+    }
+  }
+  &__Botttom {
+    @include sizeSet(100%, 60vh);
+    background-color: green;
   }
 }
