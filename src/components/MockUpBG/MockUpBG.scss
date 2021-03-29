@@ -6,8 +6,16 @@
   &__content {
     height: 50vh;
     background-size: cover;
+    padding-left: 5%;
+    padding-top: 5%;
     &-title {
       font-size: $font-size2;
+    }
+    &-subTitle {
+      font-size: $font-size1;
+    }
+    &-des {
+      font-size: $font-size1;
     }
   }
   & img {

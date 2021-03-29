@@ -2,13 +2,36 @@
 @import "../../styles/fontScheme.scss";
 
 .CountingUser {
+  &__Title {
+    font-size: $font-size2;
+    text-align: center;
+    margin-top: 10%;
+  }
   &__Counting {
+    margin-left: 25%;
     &-img {
-      background-size: cover;
-      background-repeat: no-repeat;
+      margin-top: 10%;
+      &-text {
+        position: relative;
+        top: 70%;
+        font-size: $font-size1;
+      }
+      & div {
+        float: left;
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        width: 20%;
+      }
+      & img {
+        width: 16%;
+      }
     }
   }
   &__Btn {
+    margin-top: 10%;
+
     & button {
       background-color: $navy;
       color: $white;

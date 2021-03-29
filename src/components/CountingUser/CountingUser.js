@@ -13,13 +13,31 @@ const CountingUser = () => {
         <br />
         사용자와 함께합니다.
       </div>
-      <div className='CountingUser__Conting'>
-          <div className='CountingUser__Conting-img'><img src={IMG_01} alt={IMG_01}/></div>
-          <div className='CountingUser__Conting-img'><img src={IMG_02} alt={IMG_02}/></div>
-          <div className='CountingUser__Conting-img'><img src={IMG_03} alt={IMG_03}/></div>
+      <div className='CountingUser__Counting'>
+        <div className='CountingUser__Counting-img'>
+          <div style={{ backgroundImage: `url(${IMG_01})` }}>
+          <span className='CountingUser__Counting-img-text'>
+            지원사업 수<br />
+            12,000개/년</span>
+          </div>
+        </div>
+        <div className='CountingUser__Counting-img'>
+          <div style={{ backgroundImage: `url(${IMG_02})` }}>
+          <span className='CountingUser__Counting-img-text'>
+            지원사업 수<br />
+            12,000개/년</span>
+          </div>
+        </div>
+        <div className='CountingUser__Counting-img'>
+          <div style={{ backgroundImage: `url(${IMG_03})` }}>
+            <span className='CountingUser__Counting-img-text'>
+            지원사업 수<br />
+            12,000개/년</span>
+          </div>
+        </div>
       </div>
       <div className='CountingUser__Btn'>
-          <button>비즈봇 바로가기</button>
+        <button>비즈봇 바로가기</button>
       </div>
     </div>
   );
