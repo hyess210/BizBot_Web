@@ -1,0 +1,31 @@
+@import "../../styles/styleScheme.scss";
+@import "../../styles/fontScheme.scss";
+
+.InMedia {
+  @include sizeSet(100%, 70vh);
+  color: $black;
+  margin-top: 20%;
+  &__Header {
+    font-size: $font-size2;
+  }
+  &__List {
+    text-align: center;
+    &-Items {
+      @include sizeSet(15%, 40vh);
+      display: inline-block;
+      margin-left: 5vw;
+      &-icon {
+        display: inline;
+      }
+      &-title {
+        text-align: left;
+      }
+      &-content {
+        text-align: left;
+      }
+      & a * {
+        color: $black;
+      }
+    }
+  }
+}
