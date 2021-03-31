@@ -34,7 +34,7 @@ const BizBotIntroduce = () => {
           </div>
         </div>
       </div>
-      <BizBotIntroduceBottom/>
+      {/* <BizBotIntroduceBottom/> */}
     </>
   );
 };

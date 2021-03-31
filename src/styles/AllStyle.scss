@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   font-family: $NOTOSANS_REGULAR;
-  overflow-x: hidden;
 }
 
 a {
@@ -16,4 +15,8 @@ button {
   &:focus {
     outline: none;
   }
+}
+
+li {
+  list-style: none;
 }

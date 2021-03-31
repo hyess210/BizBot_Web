@@ -3,19 +3,46 @@
 
 .MockUpBG {
   margin-top: 10%;
+  width: 100%;
+  background-color: $navy;
+  &__image {
+    width: 40% !important;
+    margin-bottom: -7px;
+  }
   &__content {
-    height: 50vh;
-    background-size: cover;
+    display: inline-block;
+    position: relative;
+    bottom: 23vh;
+    width: 50vw;
     padding-left: 5%;
-    padding-top: 5%;
+    color: $white;
     &-title {
       font-size: $font-size2;
+      font-family: $NOTOSANS_BOLD;
+      &-bg {
+        @include sizeSet(10px, 20px);
+        transition: 0.4s;
+        transition-timing-function: ease;
+        background-color: $yellow;
+        position: relative;
+        bottom: 40px;
+        &:hover {
+          width: 200px;
+        }
+      }
+      &-text {
+        margin-bottom: 10px;
+        z-index: 9;
+        cursor: default;
+        z-index: 1;
+      }
     }
     &-subTitle {
       font-size: $font-size1;
     }
     &-des {
       font-size: $font-size1;
+      font-family: $NOTOSANS_REGULAR;
     }
   }
   & img {
