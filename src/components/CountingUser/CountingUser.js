@@ -4,6 +4,7 @@ import "./CountingUser.scss";
 import IMG_01 from "assets/images/01.png";
 import IMG_02 from "assets/images/02.png";
 import IMG_03 from "assets/images/03.png";
+import CountUp from "react-countup";
 
 const CountingUser = () => {
   return (
@@ -16,28 +17,34 @@ const CountingUser = () => {
       <div className='CountingUser__Counting'>
         <div className='CountingUser__Counting-img'>
           <div style={{ backgroundImage: `url(${IMG_01})` }}>
-          <span className='CountingUser__Counting-img-text'>
-            지원사업 수<br />
-            12,000개/년</span>
+            <span className='CountingUser__Counting-img-text'>
+              지원사업 수<br /> <CountUp end={12000} />
+              개/년
+            </span>
           </div>
         </div>
         <div className='CountingUser__Counting-img'>
           <div style={{ backgroundImage: `url(${IMG_02})` }}>
-          <span className='CountingUser__Counting-img-text'>
-            지원사업 수<br />
-            12,000개/년</span>
+            <span className='CountingUser__Counting-img-text'>
+              지원사업 수<br /> <CountUp end={12000} />
+              개/년
+            </span>
           </div>
         </div>
         <div className='CountingUser__Counting-img'>
           <div style={{ backgroundImage: `url(${IMG_03})` }}>
             <span className='CountingUser__Counting-img-text'>
-            지원사업 수<br />
-            12,000개/년</span>
+              지원사업 수<br />
+              <CountUp end={12000} />
+              개/년
+            </span>
           </div>
         </div>
       </div>
       <div className='CountingUser__Btn'>
-        <button>비즈봇 바로가기</button>
+        <a href='https://pf.kakao.com/_DbxgnC' target='_blank'>
+          <button>비즈봇 바로가기</button>
+        </a>
       </div>
     </div>
   );
