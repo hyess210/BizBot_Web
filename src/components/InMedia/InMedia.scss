@@ -6,16 +6,32 @@
   color: $black;
   margin-top: 20%;
   &__Header {
+    font-family: $NOTOSANS_BOLD;
     font-size: $font-size2;
+    margin-left: 5%;
   }
   &__List {
     text-align: center;
+    margin-top: 7%;
     &-Items {
-      @include sizeSet(15%, 40vh);
+      @include sizeSet(24%, 40vh);
       display: inline-block;
-      margin-left: 5vw;
+      margin-left: 3%;
+      &-box {
+        font-size: 1.2rem;
+        & img {
+          width: 100%;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
       &-icon {
         display: inline;
+        &:hover {
+          margin-left: 10px;
+        }
       }
       &-title {
         text-align: left;
