@@ -1,0 +1,14 @@
+@import "../../styles/styleScheme.scss";
+@import "../../styles/fontScheme.scss";
+
+.NewsSubscription {
+  height: 80vh;
+  margin-top: 20%;
+  &__bg {
+    margin-left: 12%;
+    width: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+  }
+}

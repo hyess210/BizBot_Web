@@ -6,9 +6,13 @@
   color: $black;
   margin-top: 20%;
   &__Header {
-    font-family: $NOTOSANS_BOLD;
+    font-weight: 600;
     font-size: $font-size2;
     margin-left: 5%;
+    &-des {
+      font-size: $font-size1;
+      font-weight: 400;
+    }
   }
   &__List {
     text-align: center;
