@@ -11,4 +11,21 @@
     background-position: center;
     transition: 0.3s;
   }
+  &__content {
+    text-align: center;
+    position: relative;
+    bottom: 40%;
+    &-title {
+      font-size: $font-size2;
+      font-weight: 700;
+    }
+    &-des {
+      font-size: $font-size1;
+    }
+    &-line {
+      margin: 5% auto 5% auto;
+      width: 20%;
+      border: 1px solid $yellow;
+    }
+  }
 }
