@@ -12,10 +12,10 @@ const MainTemplate = () => {
     return(
         <div>
             <MainIntroduce/>
+            <CountingUser/>
             <BizBotIntroduce/>
             <SearchCategory/>
             <MockUpBG/>
-            <CountingUser/>
             <InMedia/>
             <NewsSubscription/>
         </div>

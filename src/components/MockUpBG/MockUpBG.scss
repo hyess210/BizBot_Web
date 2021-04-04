@@ -18,7 +18,6 @@
     color: $white;
     &-title {
       font-size: $font-size2;
-      font-family: $NOTOSANS_BOLD;
       &-bg {
         @include sizeSet(10px, 20px);
         transition: 0.4s;
@@ -42,7 +41,6 @@
     }
     &-des {
       font-size: $font-size1;
-      font-family: $NOTOSANS_REGULAR;
     }
   }
   & img {

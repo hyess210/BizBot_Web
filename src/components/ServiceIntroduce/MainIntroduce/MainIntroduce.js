@@ -1,21 +1,33 @@
 import React from "react";
 import "./MainIntroduce.scss";
-import MAIN_IMG from "assets/images/First_img.png";
+import MOCKUP_IOS from "assets/images/mockup_ios.png";
 
 const MainIntroduce = () => {
   return (
     <div className='MainIntroduce'>
-      hello
-      <div className='MainIntroduce__Image'>
-        <img src={MAIN_IMG} alt={MAIN_IMG} />
-        <div className='MainIntroduce__Image-content'>
-          <h1>몰라서 못받는 돈,</h1>
-          <h1>카카오톡 하나면 끝.</h1>
-          <div>약 270만개의 인공지능 매칭 알고리즘으로</div>
-          <div>​​원하는 요일, 원하는 시간에 우리회사의 추천</div>
-          <div>지원사업을 카카오톡으로 받아보실 수 있습니다.</div>
-          <button className='MainIntroduce__Image-content-btn'>Bizbot 바로가기</button>
+      <div className='MainIntroduce__content'>
+        <div className='MainIntroduce__content-subTitle'>
+          쉽고, 유용하고, 다양한
         </div>
+        <div className='MainIntroduce__content-des'>
+          우리 회사에 꼭 맞는 지원사업 만나는법
+        </div>
+        <h1 className='MainIntroduce__content-title'>
+          지원 사업 알리미 챗봇 '비즈봇(Bizbot)'
+        </h1>
+        <div className='MainIntroduce__content-des'>
+          <b>기업</b>과 <b>지원 사업</b>을 가장 효율적으로 <b>연결</b>합니다.
+        </div>
+      </div>
+      <div className='MainIntroduce__content-btn'>
+        <button className='MainIntroduce__content-btn-default'>
+          서비스 소개서
+        </button>
+        <button className='MainIntroduce__content-btn-primary'>시작하기</button>
+      </div>
+
+      <div className='MainIntroduce__Image'>
+        <img src={MOCKUP_IOS} alt={MOCKUP_IOS} />
       </div>
     </div>
   );

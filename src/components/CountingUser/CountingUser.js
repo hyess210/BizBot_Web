@@ -1,50 +1,29 @@
 import React from "react";
 import "./CountingUser.scss";
 
-import IMG_01 from "assets/images/01.png";
-import IMG_02 from "assets/images/02.png";
-import IMG_03 from "assets/images/03.png";
 import CountUp from "react-countup";
 
 const CountingUser = () => {
   return (
     <div className='CountingUser'>
-      <div className='CountingUser__Title'>
-        21만 중소기업
-        <br />
-        사용자와 함께합니다.
-      </div>
       <div className='CountingUser__Counting'>
-        <div className='CountingUser__Counting-img'>
-          <div style={{ backgroundImage: `url(${IMG_01})` }}>
-            <span className='CountingUser__Counting-img-text'>
-              지원사업 수<br /> <CountUp end={12000} />
-              개/년
-            </span>
-          </div>
+        <div className='CountingUser__Counting-text'>
+          지원사업 수(년)
+          <br />
+          <CountUp end={12000} className='CountingUser__Counting-number' />개
         </div>
-        <div className='CountingUser__Counting-img'>
-          <div style={{ backgroundImage: `url(${IMG_02})` }}>
-            <span className='CountingUser__Counting-img-text'>
-              지원사업 수<br /> <CountUp end={12000} />
-              개/년
-            </span>
-          </div>
+
+        <div className='CountingUser__Counting-text'>
+          누적 회원 수<br />{" "}
+          <CountUp end={213335} className='CountingUser__Counting-number' />
+          명
         </div>
-        <div className='CountingUser__Counting-img'>
-          <div style={{ backgroundImage: `url(${IMG_03})` }}>
-            <span className='CountingUser__Counting-img-text'>
-              지원사업 수<br />
-              <CountUp end={12000} />
-              개/년
-            </span>
-          </div>
+
+        <div className='CountingUser__Counting-img-text'>
+          누적 검색 건 수<br />
+          <CountUp end={217396} className='CountingUser__Counting-number' />
+          명
         </div>
-      </div>
-      <div className='CountingUser__Btn'>
-        <a href='https://pf.kakao.com/_DbxgnC' target='_blank'>
-          <button>비즈봇 바로가기</button>
-        </a>
       </div>
     </div>
   );

@@ -1,37 +1,50 @@
 @import "../../../styles/styleScheme.scss";
 @import "../../../styles/fontScheme.scss";
 
+@mixin buttonBasic($bgColor, $fontColor) {
+  width: 160px;
+  height: 50px;
+  background-color: $bgColor;
+  color: $fontColor;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: $font-size1;
+}
+
 .MainIntroduce {
-  height: 80vh;
+  height: 60vh;
   margin-top: 5vh;
+  &__content {
+    margin-top: 12%;
+    margin-left: 16%;
+    &-btn {
+      margin-left: 30%;
+      margin-top: 5%;
+      &-default {
+        @include buttonBasic($skyBlue, $navy);
+        border: 0.3px solid $navy;
+      }
+      &-primary {
+        @include buttonBasic($navy, $white);
+        border: 0.3px solid $skyBlue;
+        margin-left: 10px;
+      }
+    }
+    & h1 {
+      margin: 0;
+      font-size: $font-size2;
+    }
+    & div {
+      margin-top: 10px;
+    }
+  }
   &__Image {
     margin-top: 8vh;
     & img {
       position: absolute;
-      left: 0;
-      @include sizeSet(100%, 60vh);
-    }
-    &-content {
-      position: absolute;
-      color: $white;
-      margin-top: 5rem;
-      margin-left: 5rem;
-      &-btn {
-        background-color: $white;
-        border: 0;
-        padding: 10px;
-        font-size: $font-size1;
-        font-family: $NOTOSANS_BOLD;
-        margin-top: 15px;
-        border-radius: 5px;
-      }
-      & h1 {
-        margin: 0;
-        font-size: $font-size2;
-      }
-      & div {
-        margin-top: 10px;
-      }
+      right: 10%;
+      top: 15%;
+      width: 40%;
     }
   }
 }

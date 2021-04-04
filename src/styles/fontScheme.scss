@@ -1,22 +1,4 @@
-$NOTOSANS_URL: "../assets/fonts/NotoSansKR-";
-
-@mixin font_face($name, $url) {
-  font-family: $name;
-  font-display: block;
-  src: url($url + ".otf") format ("otf");
-}
-
-$NOTOSANS_REGULAR: "Noto Sans KR Regular";
-$NOTOSANS_BOLD: "Noto Sans KR Bold";
-
-@font-face {
-  @include font_face($NOTOSANS_REGULAR, $NOTOSANS_URL + "Regular");
-}
-@font-face {
-  @include font_face($NOTOSANS_BOLD, $NOTOSANS_URL + "Bold");
-}
-
-$font-size1: 1.2rem;
+$font-size1: 1rem;
 $font-size2: 2rem;
 $font-size3: 3.5rem;
 $font-size4: 5rem;
