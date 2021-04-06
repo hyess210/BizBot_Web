@@ -7,17 +7,21 @@ import CountingUser from 'components/CountingUser/CountingUser';
 import InMedia from 'components/InMedia/InMedia';
 import NewsSubscription from 'components/NewsSubscription/NewsSubscription';
 import 'styles/AllStyle.scss';
+import Vedio from 'components/Video/Video';
+import CustomerVoice from 'components/CustomerVoice/CustomerVoice';
 
 const MainTemplate = () => {
     return(
         <div>
             <MainIntroduce/>
             <CountingUser/>
-            <BizBotIntroduce/>
+            <Vedio/>
+            {/* <BizBotIntroduce/> */}
             <SearchCategory/>
             <MockUpBG/>
             <InMedia/>
             <NewsSubscription/>
+            <CustomerVoice/>
         </div>
     )
 }

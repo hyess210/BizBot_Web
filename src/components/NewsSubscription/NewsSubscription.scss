@@ -2,10 +2,13 @@
 @import "../../styles/fontScheme.scss";
 
 .NewsSubscription {
-  height: 80vh;
+  height: 55vh;
   margin-top: 20%;
+  background-position: center;
+  background-size: cover;
   &__bg {
-    margin-left: 12%;
+    margin-left: 19%;
+    margin-top: 5vh;
     width: 75%;
     background-repeat: no-repeat;
     background-position: center;

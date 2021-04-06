@@ -5,15 +5,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import BUBBLE from "assets/images/bubble.png";
+import BG_IMG from 'assets/images/First_img.png';
 
 const NewsSubscription = () => {
   AOS.init();
 
   return (
-    <div className='NewsSubscription'>
+    <div className='NewsSubscription' 
+    // style={{backgroundImage:`url(${BG_IMG})`}}
+    >
       <div data-aos='zoom-in'>
         <img src={BUBBLE} className='NewsSubscription__bg' />
-      </div><div className='NewsSubscription__content'>
+      </div>
+      {/* <div className='NewsSubscription__content'>
           <div className='NewsSubscription__content-title'>
             지원사업 카카오톡 뉴스레터 구독
           </div>
@@ -26,7 +30,7 @@ const NewsSubscription = () => {
           인기 정부 지원 사업을 정리해 카카오톡 <br/>
 뉴스레터로 보내드립니다.
           </div>
-        </div>
+        </div> */}
     </div>
   );
 };
