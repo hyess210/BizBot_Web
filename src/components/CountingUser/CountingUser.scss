@@ -8,12 +8,15 @@
     margin-left: 25%;
     color: $skyBlue;
     &-text {
-      position: relative;
-      top: 70%;
+      display: inline;
       font-size: $font-size1;
+      margin-top: 25px;
+      width: 10vw;
     }
     &-number {
+      display: inline;
       color: $white;
+      font-size: $font-size2;
     }
     & div {
       float: left;
