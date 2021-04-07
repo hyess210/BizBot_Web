@@ -9,6 +9,7 @@ import NewsSubscription from 'components/NewsSubscription/NewsSubscription';
 import 'styles/AllStyle.scss';
 import Vedio from 'components/Video/Video';
 import CustomerVoice from 'components/CustomerVoice/CustomerVoice';
+import Direction from 'components/Direction/Direction';
 
 const MainTemplate = () => {
     return(
@@ -22,6 +23,7 @@ const MainTemplate = () => {
             <InMedia/>
             <NewsSubscription/>
             <CustomerVoice/>
+            <Direction/>
         </div>
     )
 }
