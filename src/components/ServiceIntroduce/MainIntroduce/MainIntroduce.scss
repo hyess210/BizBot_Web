@@ -31,11 +31,11 @@
       margin-top: 10px;
       margin-bottom: 5%;
       font-weight: 700;
-      font-size: $font-size3;
+      font-size: $font-size4;
     }
     &-btn {
-      margin-left: 20vw;
-      margin-top: 5%;
+      // margin-left: 20vw;
+      margin-top: 15px;
       &-default {
         @include buttonBasic($skyBlue, $navy);
         border: 0.3px solid $navy;
