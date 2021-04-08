@@ -1,0 +1,29 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.Footer {
+  height: 30vh;
+  background-color: $navy;
+  margin-top: 10%;
+  &__image {
+    text-align: center;
+    &-logo {
+      & img {
+        width: 7%;
+        margin: 25px 500px 25px auto;
+      }
+    }
+  }
+  &__text {
+    color: $skyBlue;
+    display: block;
+    margin: auto;
+    width: 40%;
+    &-mail {
+      text-align: left;
+    }
+    &-des {
+      color: $gray2;
+    }
+  }
+}
