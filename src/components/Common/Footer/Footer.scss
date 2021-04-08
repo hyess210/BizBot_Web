@@ -9,7 +9,7 @@
     text-align: center;
     &-logo {
       & img {
-        width: 7%;
+        width: 100px;
         margin: 25px 500px 25px auto;
       }
     }
@@ -18,12 +18,13 @@
     color: $skyBlue;
     display: block;
     margin: auto;
-    width: 40%;
+    width: 50vw;
     &-mail {
       text-align: left;
     }
     &-des {
       color: $gray2;
+      margin-top: 15px;
     }
   }
 }

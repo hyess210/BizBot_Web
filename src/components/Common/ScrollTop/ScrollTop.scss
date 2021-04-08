@@ -1,0 +1,29 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.ScrollTop {
+  @include sizeSet(50px, 50px);
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 90;
+  background-image: linear-gradient(
+    to left bottom,
+    #2d45a6,
+    #293f98,
+    #25398a,
+    #21347c,
+    #1e2e6e
+  );
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 15px rgba($black, 0.4);
+  border-radius: 15px;
+
+  & * {
+    font-size: 2rem;
+    padding: 8px;
+    color: $white;
+  }
+}
