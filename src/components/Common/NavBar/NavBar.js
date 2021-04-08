@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
+import LOGO_IMG from 'assets/images/persona_logo.png';
+
 const NavBar = () => {
   return (
     <div className='NavBar'>
       <div className='NavBar__Wrap'>
         <div className='NavBar__logo'>
-          <Link to='/'>BizBot</Link>
+          <Link to='/'>
+            <img src={LOGO_IMG} alt={LOGO_IMG}/>
+          </Link>
         </div>
         <div className='NavBar__menu'>
           <div>

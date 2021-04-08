@@ -4,7 +4,7 @@
 .NavBar {
   @include sizeSet(100%, 5vh);
   background-color: $white;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   box-shadow: $gray1 0px 0px 15px;
@@ -23,9 +23,8 @@
     &:focus {
       outline: none;
     }
-    & * {
-      text-decoration: none;
-      color: $gray2;
+    & img {
+      width: 80px;
     }
   }
   &__menu {
@@ -36,7 +35,7 @@
       margin-right: 30px;
       cursor: pointer;
       text-decoration: none;
-      color: $gray2;
+      color: $black;
     }
   }
 }
