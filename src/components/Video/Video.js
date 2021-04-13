@@ -1,7 +1,7 @@
 import React from "react";
 import "./Video.scss";
 
-import VIDEO from "assets/media/file.mp4";
+import VIDEO from "assets/video/file.mp4";
 
 const Vedio = () => {
   return (

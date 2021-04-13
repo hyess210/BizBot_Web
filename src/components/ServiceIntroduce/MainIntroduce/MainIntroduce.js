@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainIntroduce.scss";
-import MOCKUP_IOS from "assets/images/mockup_ios.png";
+// import MOCKUP_IOS from "assets/images/mockup_ios.png";
+import MAIN from 'assets/images/main.jpg';
 
 const MainIntroduce = () => {
   return (
@@ -27,7 +28,8 @@ const MainIntroduce = () => {
       </div>
 
       <div className='MainIntroduce__Image'>
-        <img src={MOCKUP_IOS} alt={MOCKUP_IOS} />
+        {/* <img src={MOCKUP_IOS} alt={MOCKUP_IOS} /> */}
+        <img src={MAIN} alt={MAIN} />
       </div>
     </div>
   );
