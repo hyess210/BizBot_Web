@@ -58,3 +58,15 @@
     }
   }
 }
+
+@include mobile {
+  .MainIntroduce {
+    &__content {
+      &-btn {
+        &-primary {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

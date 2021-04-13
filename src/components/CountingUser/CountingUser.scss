@@ -6,11 +6,14 @@
   background-color: $navy;
   &__Counting {
     margin-left: 25%;
+    padding-top: 25px;
+    display: block;
     color: $skyBlue;
     &-text {
       display: inline;
       font-size: $font-size1;
-      margin-top: 25px;
+      margin-top: 30px;
+      margin-left: 30px;
       width: 10vw;
     }
     &-number {
@@ -19,16 +22,29 @@
       font-size: $font-size2;
       font-weight: 700;
     }
-    & div {
-      float: left;
-      background-repeat: none;
-      background-size: cover;
-      background-position: center;
-      height: 24vh;
-      width: 25%;
-    }
+    // & div {
+    //   float: left;
+    //   background-repeat: none;
+    //   background-size: cover;
+    //   background-position: center;
+    //   height: 24vh;
+    //   width: 25%;
+    // }
     & img {
       width: 16%;
+    }
+  }
+}
+
+@include mobile {
+  .CountingUser {
+    height: 40vh;
+    &__Counting {
+      &-text {
+        width: 40vw;
+        display: block;
+        font-size: $font-size2;
+      }
     }
   }
 }

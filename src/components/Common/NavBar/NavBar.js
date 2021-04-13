@@ -5,24 +5,24 @@ import "./NavBar.scss";
 import LOGO_IMG from 'assets/images/persona_logo.png';
 
 const NavBar = () => {
-  const [prevScroll,setPrevScroll] = useState(window.pageYOffset);
-  const [isShowNav,setIsShowNav] = useState(true);
+  // const [prevScroll,setPrevScroll] = useState(window.pageYOffset);
+  // const [isShowNav,setIsShowNav] = useState(true);
 
-  useEffect(()=>{
-    window.addEventListener('scroll',handleScroll);
-    return(()=>{
-      window.removeEventListener('scroll',handleScroll);
-    })
-  },[]);
+  // useEffect(()=>{
+  //   window.addEventListener('scroll',handleScroll);
+  //   return(()=>{
+  //     window.removeEventListener('scroll',handleScroll);
+  //   })
+  // },[]);
 
-  const handleScroll = () => {
-    const currentScroll = window.pageYOffset;
-    setIsShowNav(prevScroll > currentScroll);
-    setPrevScroll(currentScroll);
-  }
+  // const handleScroll = () => {
+  //   const currentScroll = window.pageYOffset;
+  //   setIsShowNav(prevScroll > currentScroll);
+  //   setPrevScroll(currentScroll);
+  // }
 
   return (
-    <div className={isShowNav?'NavBar':'NavBar__hidden'}>
+    <div className='NavBar'>
       <div className='NavBar__Wrap'>
         <div className='NavBar__logo'>
           <Link to='/'>
