@@ -1,0 +1,13 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.BizInfo {
+  display: block;
+  margin: auto;
+  text-align: center;
+  & div {
+    & img {
+      width: 85%;
+    }
+  }
+}

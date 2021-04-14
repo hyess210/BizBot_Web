@@ -1,4 +1,4 @@
-import MainTemplate from 'components/MainTemplate/MainTemplate';
+import MainTemplate from 'components/Main/MainTemplate/MainTemplate';
 import React from 'react';
 
 const MainContainer = () => {

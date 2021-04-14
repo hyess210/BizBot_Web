@@ -1,0 +1,9 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.CIMain {
+  height: 100vh;
+  &__img {
+    width: 40vw;
+  }
+}
