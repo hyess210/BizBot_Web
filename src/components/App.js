@@ -13,6 +13,11 @@ const App =()=> {
       render={() => <Pages.MainPage/>}
       />
     </Switch>
+    <Switch>
+      <Route path='/ci'
+      render={()=><Pages.CIPage/>}
+      />
+    </Switch>
     </BrowserRouter>
     </>
   );

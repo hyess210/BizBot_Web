@@ -10,6 +10,7 @@ import 'styles/AllStyle.scss';
 import Vedio from 'components/Main/Video/Video';
 import CustomerVoice from 'components/Main/CustomerVoice/CustomerVoice';
 import Direction from 'components/Main/Direction/Direction';
+import Investor from '../Investors/Investor';
 
 const MainTemplate = () => {
     return(
@@ -20,6 +21,7 @@ const MainTemplate = () => {
             {/* <BizBotIntroduce/> */}
             <SearchCategory/>
             <MockUpBG/>
+            <Investor/>
             <InMedia/>
             <NewsSubscription/>
             <CustomerVoice/>

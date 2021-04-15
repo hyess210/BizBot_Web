@@ -1,0 +1,11 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.Investor {
+  &__content {
+    text-align: center;
+    margin-top: 5%;
+    font-size: $font-size3;
+    font-weight: 700;
+  }
+}
