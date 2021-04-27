@@ -1,20 +1,24 @@
 import React,{useEffect} from 'react';
+import './Direction.scss';
 
 const {kakao} = window;
 
 const Direction =()=> {
     useEffect(()=>{
         const container = document.getElementById('map');
+        const markers = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(35.87146203771322, 128.62491786245073) 
+        });
         const options = {
             center: new kakao.maps.LatLng(35.87146203771322, 128.62491786245073),
-            level: 3
+            level: 3,
+            marker:markers
         }
-    
         const map = new kakao.maps.Map(container,options);
+        markers.setMap(map);
     },[]);
     return (
-    <div id="map" style={{width:'500px',height:'400px'}}/>
-
+    <div id="map" className="Direction__map" style={{width:'900px',height:'400px'}}/>
     )
 }
 export default Direction;

@@ -1,0 +1,13 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.MainTemplate {
+  &__Direction {
+    text-align: center;
+    &-title {
+      margin: 10% auto 20px;
+      font-size: $font-size2;
+      font-weight: 700;
+    }
+  }
+}
