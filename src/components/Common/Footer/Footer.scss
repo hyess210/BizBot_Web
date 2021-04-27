@@ -28,3 +28,9 @@
     }
   }
 }
+
+@include mobile {
+  .Footer {
+    height: 40vh;
+  }
+}

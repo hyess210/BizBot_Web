@@ -19,3 +19,17 @@
     }
   }
 }
+
+@include mobile {
+  .Video {
+    &__title {
+      width: 100%;
+      margin-top: 12%;
+    }
+    &__media {
+      & video {
+        width: 100%;
+      }
+    }
+  }
+}

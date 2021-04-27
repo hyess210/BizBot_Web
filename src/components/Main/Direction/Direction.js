@@ -11,14 +11,14 @@ const Direction =()=> {
         });
         const options = {
             center: new kakao.maps.LatLng(35.87146203771322, 128.62491786245073),
-            level: 3,
+            level: 5,
             marker:markers
         }
         const map = new kakao.maps.Map(container,options);
         markers.setMap(map);
     },[]);
     return (
-    <div id="map" className="Direction__map" style={{width:'900px',height:'400px'}}/>
+    <div id="map" className="Direction__map" style={{width:'70%',height:'400px'}}/>
     )
 }
 export default Direction;
