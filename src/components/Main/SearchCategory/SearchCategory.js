@@ -1,9 +1,6 @@
 import React from 'react';
 import './SearchCategory.scss';
 
-import CATEGORY_IMG from 'assets/images/search_icons.png';
-import MORE_IMG from 'assets/images/search_more_btn.png';
-
 const SearchCategory = () => {
     return (
         <div className='SearchCategory'>
@@ -13,8 +10,6 @@ const SearchCategory = () => {
 금융, 기술, 인력 등 9개 분야별 지원사업 검색이 가능합니다.</div>
             </div>
             <div className='SearchCategory__category'>
-                <img className='SearchCategory__category-category' src={CATEGORY_IMG} alt={CATEGORY_IMG}/>
-                <img className='SearchCategory__category-more' src={MORE_IMG} alt={MORE_IMG}/>
             </div>
         </div>
     )

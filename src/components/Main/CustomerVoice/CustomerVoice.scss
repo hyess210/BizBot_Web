@@ -24,8 +24,6 @@
       &-last {
         margin-top: -30%;
       }
-      display: block;
-      // margin: auto;
       border: 1px solid lightgray;
       @include sizeSet(450px, 25vh);
       border-radius: 10px;
