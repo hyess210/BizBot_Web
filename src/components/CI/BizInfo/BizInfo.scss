@@ -11,3 +11,13 @@
     }
   }
 }
+
+@include mobile {
+  .BizInfo {
+    & div {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

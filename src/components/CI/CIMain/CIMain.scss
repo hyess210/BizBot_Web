@@ -24,3 +24,21 @@
     }
   }
 }
+
+@include mobile {
+  .CIMain {
+    &__img {
+      & img {
+        width: 350px;
+      }
+    }
+    &__content {
+      &-title {
+        font-size: $font-size2;
+      }
+      &-des {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

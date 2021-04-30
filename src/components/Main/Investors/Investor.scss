@@ -9,3 +9,11 @@
     font-weight: 700;
   }
 }
+
+@include mobile {
+  .Investor {
+    &__content {
+      font-size: $font-size1;
+    }
+  }
+}

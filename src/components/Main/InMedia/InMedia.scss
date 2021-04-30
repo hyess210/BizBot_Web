@@ -75,3 +75,13 @@
     }
   }
 }
+
+@include mobile {
+  .InMedia {
+    &__List {
+      &-Items {
+        width: 70%;
+      }
+    }
+  }
+}
