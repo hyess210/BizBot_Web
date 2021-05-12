@@ -4,10 +4,18 @@
 .MainTemplate {
   &__Direction {
     text-align: center;
+    width: 100vh;
+    display: block;
+    margin: auto;
     &-title {
       margin: 10% auto 20px;
       font-size: $font-size2;
       font-weight: 700;
+    }
+    &-adress {
+      text-align: left;
+      margin-top: 20px;
+      color: $gray2;
     }
   }
 }

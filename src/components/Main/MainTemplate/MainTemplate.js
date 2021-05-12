@@ -29,6 +29,7 @@ const MainTemplate = () => {
             <div className="MainTemplate__Direction">
                 <div className="MainTemplate__Direction-title">오시는 길</div>
             <Direction/>
+            <div className="MainTemplate__Direction-adress">대구 동구 동대구로 461 대구경북디자인센터 10층 1004호</div>
             </div>
         </div>
     )
