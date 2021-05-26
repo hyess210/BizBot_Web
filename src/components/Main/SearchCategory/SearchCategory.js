@@ -1,18 +1,26 @@
-import React from 'react';
-import './SearchCategory.scss';
+import React from "react";
+import "./SearchCategory.scss";
+
+import CATEGORY_IMG from "assets/images/illustrator_img.png";
 
 const SearchCategory = () => {
-    return (
-        <div className='SearchCategory'>
-            <div className='SearchCategory__content'>
-                <h1 className='SearchCategory__content-title'>지역별, 분야별 지원사업 검색</h1>
-                <div className='SearchCategory__content-des'>중앙부처 및 전국 18개 지자체 지역별,<br/>
-금융, 기술, 인력 등 9개 분야별 지원사업 검색이 가능합니다.</div>
-            </div>
-            <div className='SearchCategory__category'>
-            </div>
+  return (
+    <div className='SearchCategory'>
+      <div className='SearchCategory__content'>
+        <h1 className='SearchCategory__content-title'>
+          전국 약 500여개 중앙부처, 지자체, 공공기관의
+          <br />
+          최신 정부지원사업을 카카오톡으로 검색할 수 있는 서비스입니다.
+        </h1>
+        <div className='SearchCategory__content-des'>
+            가장 빠르고 쉬운 비즈봇 서비스에 이미 22만 중소기업이 함께하고 있습니다.
         </div>
-    )
-}
+      </div>
+      <div className='SearchCategory__img'>
+        <img src={CATEGORY_IMG} alt={CATEGORY_IMG} />
+      </div>
+    </div>
+  );
+};
 
 export default SearchCategory;

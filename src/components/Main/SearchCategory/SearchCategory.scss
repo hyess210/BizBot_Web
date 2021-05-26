@@ -2,26 +2,25 @@
 @import "../../../styles/fontScheme.scss";
 
 .SearchCategory {
-  width: 50%;
+  width: 100%;
   display: block;
-  margin: 15% auto auto auto;
+  margin-top: 15%;
   &__content {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
     &-title {
+      font-size: $font-size3;
+    }
+    &-des {
       font-size: $font-size2;
+      margin-top: 20px;
     }
   }
-  &__category {
-    margin-top: 5%;
-    &-category {
-      width: 700px;
-      display: inline;
-    }
-    &-more {
-      width: 15%;
-      margin-left: 20px;
-      display: inline;
-      cursor: pointer;
-      transition: 0.2s;
+  &__img {
+    text-align: center;
+    & img {
+      width: 60vw;
     }
   }
 }
