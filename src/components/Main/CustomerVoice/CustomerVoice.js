@@ -57,7 +57,7 @@ const CustomerVoice = () => {
           <div className='CustomerVoice__content-customer-video'>
             <iframe
               width='450'
-              height='200'
+              height='250'
               style={{ border: "none" }}
               src='https://www.youtube.com/embed/R7P4FNCfFDA'
             ></iframe>

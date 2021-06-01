@@ -2,22 +2,20 @@
 @import "../../../styles/fontScheme.scss";
 
 .BizInfo {
-  display: block;
-  margin: auto;
-  text-align: center;
-  & div {
-    & img {
-      width: 80%;
+  margin-top: 25%;
+  &__content {
+    &-title {
+      font-size: 2rem;
+      font-weight: 500;
+      & hr {
+        width: 30px;
+        height: 2.5px;
+        background-color: $navy;
+        border: none;
+      }
     }
   }
 }
 
 @include mobile {
-  .BizInfo {
-    & div {
-      & img {
-        width: 100%;
-      }
-    }
-  }
 }

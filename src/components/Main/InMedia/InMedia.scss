@@ -13,7 +13,7 @@
 .InMedia {
   @include sizeSet(100%, 70vh);
   color: $black;
-  margin-top: 20%;
+  margin-top: 15%;
   &__icon {
     &-left {
       @include buttonBasic();
