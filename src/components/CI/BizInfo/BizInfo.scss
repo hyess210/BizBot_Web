@@ -4,14 +4,26 @@
 .BizInfo {
   margin-top: 25%;
   &__content {
+    margin-bottom: 10%;
+    margin-left: 10%;
     &-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
+      display: inline-block;
       & hr {
         width: 30px;
         height: 2.5px;
         background-color: $navy;
         border: none;
+      }
+    }
+    &-children {
+      display: inline-block;
+      color: $gray3;
+      line-height: 1.5;
+      margin-left: 30%;
+      &-brand {
+        margin-top: 15%;
       }
     }
   }

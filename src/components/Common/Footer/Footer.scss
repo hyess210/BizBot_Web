@@ -5,19 +5,22 @@
   height: 30vh;
   background-color: $navy;
   margin-top: 10%;
+  padding-left: 5%;
+  padding-top: 5%;
   &__image {
     text-align: center;
     &-logo {
+      width: 100px;
+      margin-bottom: 15px;
       & img {
         width: 100px;
-        margin: 25px 500px 25px auto;
       }
     }
   }
   &__text {
     color: $skyBlue;
     display: block;
-    margin: auto;
+    // margin: auto;
     width: 50vw;
     &-mail {
       text-align: left;
