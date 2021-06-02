@@ -3,13 +3,13 @@
 
 .NewsSubscription {
   height: 55vh;
-  margin-top: 20%;
+  margin-top: 10%;
   background-position: center;
   background-size: cover;
   &__bg {
     display: block;
     margin: auto;
-    width: 75%;
+    width: 70%;
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s;
@@ -17,7 +17,7 @@
   &__content {
     text-align: center;
     position: relative;
-    bottom: 40%;
+    bottom: 50%;
     &-title {
       font-size: $font-size2;
       font-weight: 700;
@@ -26,7 +26,7 @@
       font-size: $font-size1;
     }
     &-line {
-      margin: 5% auto 5% auto;
+      margin: 20px auto 20px auto;
       width: 20%;
       border: 1px solid $yellow;
     }

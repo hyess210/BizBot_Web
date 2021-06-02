@@ -6,7 +6,7 @@ import MOCKUP_IMG from "assets/images/mockUp_Image.png";
 const MockUpBG = () => {
   return (
     <div className='MockUpBG'>
-      <div className='MockUpBG__content'>
+      {/* <div className='MockUpBG__content'>
         <div className='MockUpBG__content-title'>
           <div className='MockUpBG__content-title-text'>창업</div>
           <div className='MockUpBG__content-title-bg'></div>
@@ -22,7 +22,7 @@ const MockUpBG = () => {
           간편하게 할 수 있습니다.
         </div>
       </div>
-      <img className='MockUpBG__image' src={MOCKUP_IMG} alt={MOCKUP_IMG} />
+      <img className='MockUpBG__image' src={MOCKUP_IMG} alt={MOCKUP_IMG} /> */}
     </div>
   );
 };

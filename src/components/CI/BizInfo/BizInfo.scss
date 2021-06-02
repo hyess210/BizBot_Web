@@ -24,6 +24,10 @@
       margin-left: 30%;
       &-brand {
         margin-top: 15%;
+        &-title {
+          font-weight: 700;
+          color: $black;
+        }
       }
     }
   }

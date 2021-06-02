@@ -25,20 +25,20 @@ const BizInfo = () => {
       </ContentTemplate>
       <ContentTemplate title='BRAND'>
         <div className='BizInfo__content-children-brand'>
-          <b>Vision</b><br/>
+          <div className='BizInfo__content-children-brand-title'>Vision</div>
           국내 최대 플랫폼 제작
         </div><div className='BizInfo__content-children-brand'>
-          <b>Mission</b><br/>
+          <div className='BizInfo__content-children-brand-title'>Mission</div>
           디지털 혁신 기반 민관공 연결
         </div><div className='BizInfo__content-children-brand'>
-          <b>Positioning</b><br/>
-          디지털 혁신을 통한 민관공을 쉽고<br/>
+          <div className='BizInfo__content-children-brand-title'>Positioning</div>
+          디지털 혁신을 통한 민관공을 쉽고
           간편하게 연결하는 플랫폼 제작사
         </div><div className='BizInfo__content-children-brand'>
-          <b>Personality</b><br/>
+          <div className='BizInfo__content-children-brand-title'>Personality</div>
           존중, 소통, 포용
         </div><div className='BizInfo__content-children-brand'>
-          <b>Core Value</b><br/>
+          <div className='BizInfo__content-children-brand-title'>Core Value</div>
           시대의 흐름에 맞는 디지털 혁신
         </div>
       </ContentTemplate>
