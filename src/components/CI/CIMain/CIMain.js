@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CIMain.scss";
 
 import CIMAIN_IMG from "assets/images/CI_Background.png";
@@ -13,7 +14,9 @@ const CIMain = () => {
             페르소나는 정보 통신 기술(ICT) 솔루션의 글로벌 선두 기업입니다.
           </div>
           <div className='CIMain__content-btn'>
+            <Link to='/'>
             <button>Bizbot 서비스 소개</button>
+            </Link>
           </div>
         </div>
         <div className='CIMain__img'>
