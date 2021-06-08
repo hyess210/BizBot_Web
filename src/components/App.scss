@@ -1,0 +1,33 @@
+$font-path: "../assets/fonts/";
+
+@font-face {
+  font-family: notosanskr;
+  src: url("#{$font-path}/notosanskr/notosanskr-light.woff2") format("woff2"),
+    url("#{$font-path}/notosanskr/notosanskr-light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: notosanskr;
+  src: url("#{$font-path}/notosanskr/notosanskr-regular.woff2") format("woff2"),
+    url("#{$font-path}/notosanskr/notosanskr-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: notosanskr;
+  src: url("#{$font-path}/notosanskr/notosanskr-medium.woff2") format("woff2"),
+    url("#{$font-path}/notosanskr/notosanskr-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: notosanskr;
+  src: url("#{$font-path}/notosanskr/notosanskr-bold.woff2") format("woff2"),
+    url("#{$font-path}/notosanskr/notosanskr-bold.woff") format("woff");
+  font-weight: 700;
+}
+
+* {
+  font-family: notosanskr, "Apple SD Gothic Neo";
+}

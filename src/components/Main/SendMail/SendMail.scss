@@ -1,0 +1,35 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.SendMail {
+  background-position: center;
+  background-size: contain;
+  height: 25vh;
+  text-align: center;
+  &__content {
+    color: $white;
+    padding-top: 25px;
+    &-title {
+      font-size: $font-size3;
+      font-weight: 700;
+    }
+    &-des {
+      font-size: $font-size1;
+    }
+    &-year {
+      color: $gray3;
+      margin: 10px 0px;
+    }
+  }
+  &__button {
+    & button {
+      font-size: $font-size1;
+      font-weight: 500;
+      border: 1px solid $skyBlue;
+      border-radius: 3px;
+      background-color: $navy;
+      color: $white;
+      padding: 10px 25px;
+    }
+  }
+}

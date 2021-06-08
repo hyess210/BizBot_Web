@@ -1,0 +1,64 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.NavBar {
+  @include sizeSet(100%, 5vh);
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: $gray1 0px 0px 15px;
+  padding-top: 20px;
+  text-decoration: none;
+  z-index: 90;
+  transition: 0.4s;
+  &__hidden {
+    @include sizeSet(100%, 5vh);
+    background-color: $white;
+    position: sticky;
+    left: 0;
+    box-shadow: $gray1 0px 0px 15px;
+    padding-top: 20px;
+    text-decoration: none;
+    z-index: 90;
+    transition: 0.4s;
+    top: -70px;
+  }
+  &__Wrap {
+    position: sticky;
+  }
+  &__logo {
+    text-align: left;
+    width: 10vw;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    & img {
+      width: 80px;
+    }
+  }
+  &__menu {
+    float: right;
+    display: inline;
+    & * {
+      display: inline;
+      margin-right: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
+
+@include mobile {
+  .NavBar {
+    &__menu {
+      & * {
+        margin-right: 10px;
+      }
+    }
+  }
+}

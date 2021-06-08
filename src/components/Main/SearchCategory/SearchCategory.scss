@@ -1,0 +1,26 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.SearchCategory {
+  width: 100%;
+  display: block;
+  margin-top: 15%;
+  &__content {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+    &-title {
+      font-size: $font-size3;
+    }
+    &-des {
+      font-size: $font-size2;
+      margin-top: 20px;
+    }
+  }
+  &__img {
+    text-align: center;
+    & img {
+      width: 60vw;
+    }
+  }
+}

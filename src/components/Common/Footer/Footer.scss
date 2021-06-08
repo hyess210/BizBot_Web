@@ -1,0 +1,39 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.Footer {
+  height: 30vh;
+  background-color: $navy;
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-top: 5%;
+  &__image {
+    text-align: center;
+    &-logo {
+      width: 100px;
+      margin-bottom: 15px;
+      & img {
+        width: 100px;
+      }
+    }
+  }
+  &__text {
+    color: $skyBlue;
+    display: block;
+    // margin: auto;
+    width: 50vw;
+    &-mail {
+      text-align: left;
+    }
+    &-des {
+      color: $gray2;
+      margin-top: 15px;
+    }
+  }
+}
+
+@include mobile {
+  .Footer {
+    height: 40vh;
+  }
+}

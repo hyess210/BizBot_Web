@@ -1,0 +1,88 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+@mixin buttonBasic {
+  @include sizeSet(70px, 70px);
+  box-shadow: 0px 0px 15px rgba($color: $black, $alpha: 0.2);
+  border-radius: 60%;
+  border: none;
+  background-color: $white;
+  color: $black;
+}
+
+.InMedia {
+  @include sizeSet(100%, 70vh);
+  color: $black;
+  margin-top: 15%;
+  &__icon {
+    &-left {
+      @include buttonBasic();
+      font-size: 4rem;
+      position: relative;
+      left: 3%;
+      top: 30vh;
+    }
+    &-right {
+      @include buttonBasic();
+      font-size: 4rem;
+      position: relative;
+      left: 93vw;
+      bottom: 25vh;
+    }
+  }
+  &__Header {
+    font-weight: 600;
+    font-size: $font-size2;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  &__List {
+    text-align: center;
+    margin-top: 0%;
+    &-Items {
+      @include sizeSet(24%, 40vh);
+      display: inline-block;
+      border: 1px solid silver;
+      padding: 10px;
+      &:nth-child(2) {
+        margin: 0 15px;
+      }
+      &-box {
+        font-size: 1.2rem;
+        & img {
+          width: 100%;
+          transition: 0.3s;
+          margin-bottom: 15px;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+      &-icon {
+        display: inline;
+        &:hover {
+          margin-left: 10px;
+        }
+      }
+      &-title {
+        text-align: left;
+      }
+      &-content {
+        text-align: left;
+      }
+      & a * {
+        color: $black;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .InMedia {
+    &__List {
+      &-Items {
+        width: 70%;
+      }
+    }
+  }
+}

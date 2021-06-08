@@ -1,0 +1,57 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.CIMain {
+  margin-bottom: 10%;
+  &__img {
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+    & img {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+  &__content {
+    text-align: center;
+    color: $white;
+    margin-top: 15%;
+    &-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+    }
+    &-des {
+      margin-bottom: 30px;
+      font-size: $font-size1;
+    }
+    &-btn {
+      & button {
+        font-weight: 700;
+        font-size: $font-size1;
+        background-color: $white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .CIMain {
+    &__img {
+      & img {
+        width: 350px;
+      }
+    }
+    &__content {
+      &-title {
+        font-size: $font-size2;
+      }
+      &-des {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

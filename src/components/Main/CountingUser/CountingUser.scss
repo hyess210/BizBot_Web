@@ -1,0 +1,50 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.CountingUser {
+  height: 10vh;
+  background-color: $navy;
+  &__Counting {
+    margin-left: 25%;
+    padding-top: 25px;
+    display: block;
+    color: $skyBlue;
+    &-text {
+      display: inline;
+      font-size: $font-size1;
+      margin-top: 30px;
+      margin-left: 30px;
+      width: 10vw;
+    }
+    &-number {
+      display: inline;
+      color: $white;
+      font-size: $font-size2;
+      font-weight: 700;
+    }
+    // & div {
+    //   float: left;
+    //   background-repeat: none;
+    //   background-size: cover;
+    //   background-position: center;
+    //   height: 24vh;
+    //   width: 25%;
+    // }
+    & img {
+      width: 16%;
+    }
+  }
+}
+
+@include mobile {
+  .CountingUser {
+    height: 50vh;
+    &__Counting {
+      &-text {
+        width: 40vw;
+        display: block;
+        font-size: $font-size2;
+      }
+    }
+  }
+}

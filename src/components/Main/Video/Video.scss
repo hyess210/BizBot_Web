@@ -1,0 +1,35 @@
+@import "../../../styles/styleScheme.scss";
+@import "../../../styles/fontScheme.scss";
+
+.Video {
+  &__title {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    display: block;
+    margin: 5% auto;
+    font-size: $font-size2;
+    font-weight: 500;
+  }
+  &__media {
+    & video {
+      width: 45%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+@include mobile {
+  .Video {
+    &__title {
+      width: 100%;
+      margin-top: 12%;
+    }
+    &__media {
+      & video {
+        width: 100%;
+      }
+    }
+  }
+}

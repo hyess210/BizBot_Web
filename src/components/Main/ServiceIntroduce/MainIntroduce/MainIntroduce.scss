@@ -1,0 +1,87 @@
+@import "../../../../styles/styleScheme.scss";
+@import "../../../../styles/fontScheme.scss";
+
+@mixin buttonBasic($bgColor, $fontColor) {
+  width: 160px;
+  height: 50px;
+  background-color: $bgColor;
+  color: $fontColor;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: $font-size1;
+}
+
+.MainIntroduce {
+  height: 55vh;
+  &__content {
+    margin-top: 12%;
+    margin-left: 16%;
+    &-subTitle {
+      text-align: left;
+      display: inline;
+      width: 10%;
+      font-size: $font-size2;
+      font-weight: 700;
+    }
+    &-des {
+      display: inline;
+    }
+    &-title {
+      margin-top: 10px;
+      margin-bottom: 5%;
+      font-weight: 700;
+      font-size: $font-size4;
+    }
+    &-btn {
+      // margin-left: 20vw;
+      margin-top: 15px;
+      &-default {
+        @include buttonBasic($skyBlue, $navy);
+        border: 0.3px solid $navy;
+      }
+      &-primary {
+        @include buttonBasic($navy, $white);
+        border: 0.3px solid $skyBlue;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__Image {
+    margin-top: 8vh;
+    & img {
+      position: absolute;
+      right: 6%;
+      top: 35%;
+      width: 700px;
+      z-index: -1;
+    }
+  }
+}
+
+@include mobile {
+  .MainIntroduce {
+    &__content {
+      &-subTitle {
+        font-size: $font-size1;
+      }
+      &-des {
+        display: block;
+      }
+      &-title {
+        font-size: $font-size2;
+      }
+      &-btn {
+        &-primary {
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+      }
+    }
+    &__Image {
+      & img {
+        width: 90%;
+        top: 50%;
+      }
+    }
+  }
+}
