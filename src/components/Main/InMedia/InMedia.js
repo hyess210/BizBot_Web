@@ -2,7 +2,8 @@ import React from "react";
 import "./InMedia.scss";
 
 import MEDIA01 from "assets/images/media1.png";
-// import { FiChevronsRight } from "react-icons/fi";
+import MEDIA02 from 'assets/images/media2.jpg';
+import MEDIA03 from 'assets/images/media3.jpg';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 const InMedia = () => {
@@ -11,10 +12,6 @@ const InMedia = () => {
       <li className='InMedia__List-Items'>
         <a href={url} target='_blank' className='InMedia__List-Items-box'>
           <img src={imageSrc} alt={imageSrc} />
-          {/* <div className='InMedia__List-Items-title'>
-            {title}
-            <FiChevronsRight className='InMedia__List-Items-icon' />
-          </div> */}
           <div className='InMedia__List-Items-content'>{content}</div>
         </a>
       </li>
@@ -25,15 +22,12 @@ const InMedia = () => {
       <div className='InMedia__Header'>
         <div>언론 속의 비즈봇</div>
       </div>
-      {/* <button className='InMedia__icon-left'>
-        <RiArrowDropLeftFill />
-      </button> */}
       <ul className='InMedia__List'>
         <InMediaItems
           title='언론사'
           content='대구시-스타트업 페르소나 기업 지원 위한 업무협약 체결'
           url='http://www.w-startup.com/news/articleView.html?idxno=11277'
-          imageSrc={MEDIA01}
+          imageSrc={MEDIA02}
         />
         <InMediaItems
           title='언론사'
@@ -45,11 +39,9 @@ const InMedia = () => {
           title='언론사'
           content='페르소나, 대구市 공공데이터 활용 창업경진대회 최우수상 수상'
           url='https://m.wowtv.co.kr/NewsCenter/News/Read?articleId=A202008210326#_enliple'
-          imageSrc={MEDIA01}
+          imageSrc={MEDIA03}
         />
       </ul>
-      {/* <button className='InMedia__icon-right'>
-      <RiArrowDropRightFill /></button> */}
     </div>
   );
 };

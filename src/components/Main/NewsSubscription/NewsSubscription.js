@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import BUBBLE from "assets/images/bubble.png";
-import BG_IMG from 'assets/images/First_img.png';
 
 const NewsSubscription = () => {
   AOS.init();
